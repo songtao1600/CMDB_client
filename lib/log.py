@@ -45,3 +45,8 @@ class Logger(object):
         logger_obj.addHandler(file_obj)
         self.run_logger = logger_obj
 
+    def log(self, msg, mode=True):
+        if mode:
+            self.run_logger.info(msg)
+        else:
+            self.error_logger.error(msg)
