@@ -6,6 +6,12 @@ import os
 # 项目根目录
 BASEDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\
 
+# 用于API认证的KEY
+KEY = '299095cc-1330-11e5-b06a-a45e60bec08b'
+
+# 用于API认证的请求头
+AUTH_KEY_NAME = 'auth-key'
+
 # 错误日志
 ERROR_LOG_FILE = os.path.join(BASEDIR, "log", "error.log")
 
